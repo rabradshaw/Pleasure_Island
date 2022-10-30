@@ -1,0 +1,388 @@
+/*
+    Student Name: Rodney Bradshaw
+	File Name: styles.css
+	Current Date: 10/20/2022
+*/
+/* CSS HEX */
+/*
+--bright-navy-blue: #3775BDff;
+--steel-blue: #4B84C9ff;
+--steel-blue-2: #417DC4ff;
+--light-orange: #E8CEACff;
+--iceberg: #7CACE3ff;*/
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+ }
+/* Style rule for body and images */
+body {
+    background: linear-gradient(#7CACE3ff, #3775BDff);    
+}
+h1 {
+    margin: auto 5px;
+    width: 100%;
+    font-size:80px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    background: url(../images/background.jpg);
+    background-position: 10px 10px;
+    background-size: 100%;
+    -webkit-animation: animatedBackground 10s linear infinite normal;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #b30f40;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    }
+    @-webkit-keyframes animatedBackground {
+        0% { background-position: 0 0 }
+        100% { background-position: -500px 0 }
+    }
+a{
+    text-decoration: none;
+}
+h2 {
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: 1px 1px #bab0e4;
+}
+img {
+    max-width: 100%;
+    display: block;
+    
+}
+#hero_image h2{
+    position: absolute;
+	top: 30vh;
+    font-family: 'Parisienne', cursive;
+	color: #e5e0fa;
+	width: 100%;
+    font-size: 50px;
+	text-align: center;
+    text-shadow: 1px 1px #120d24;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+  color: #000;
+  background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #ff0505 30%, #05BEF7 35%);
+-webkit-animation: animatedfont 10s linear infinite normal;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: #0000;
+}
+
+@-webkit-keyframes animatedfont {
+0% { background-position: 0 0 }
+100% { background-position: 500px 0 }
+}
+
+/* Style rule for the header */
+header {
+	text-align: center;
+    
+}
+
+/* Styles for Mobile Layout */
+
+/* Hide tablet-desktop content */
+    .tablet-desktop {
+        display: none;
+    }
+
+
+/* Style rule for the Mobile Navigation */
+input#mobile_menu {
+	display:none;
+	
+}
+input#mobile_menu:checked + .mobile  {
+	left:0px;
+	
+}
+input#mobile_menu:checked + .mobile label  {
+	background-image: url(../images/menu_close.svg);
+	
+}
+
+.mobile {
+	width: 250px;
+    font-size: 2em;
+	background-color: #3775BDff;
+	padding: 10px 20px ;
+	color: #E8CEACff;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0px;
+	left: -250px;
+	transition: left .05s ease-in-out;
+}
+
+ .mobile a {
+	color: #E8CEACff;
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	padding: 20px 0;
+	border-top: 1px solid rgba(49, 4, 70, 0.932);
+}
+
+.mobile a:first-of-type {
+	border-top: none;
+}
+
+
+.mobile label {
+	cursor: pointer;
+	display: block;
+	width: 43px;
+	height: 43px;
+	background: #3775BDff url(../images/menu_open.svg) no-repeat center center;
+	background-size: 22px auto;
+	position: absolute;
+	top: 68px;
+	right: -42px;
+}
+
+/* Style rules for navigation area */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+nav li {
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    border: 1px solid #110934;
+    margin: 1%;
+    background-color: #3775BDff;
+}
+
+nav li a {
+    display: inline-block;
+    color: #E8CEACff;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+/* Style rules for the main content  */
+main {
+	display: block;
+	font-family: Georgia, "Times New Roman", sans-serif;
+	font-size: 1em;
+	padding: 1em;
+	background-color: #E8CEACff;
+	border-top: solid 0.2em #110934; 
+	border-bottom: solid 0.2em #110934;
+}
+/* Images in grid area */
+.frame {
+    position: relative;
+    max-width:  450px;
+    margin: 2% auto;
+}
+
+.pic-text {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.4);
+    color: #E8CEACff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Style rule for footer */
+footer {
+	font-size: .75em;
+	text-align: center;
+	margin-top: 2em;
+    color: #E8CEACff;
+}
+.tel-link{
+    font-size: 1.55em;
+}
+footer a {
+    
+    text-decoration: none;
+    color: #E8CEACff;
+    text-align: center;
+}
+#social{
+    margin-left: 10%;
+    display: inline-flex;   
+}
+#social img{
+    padding: 10px;
+}
+
+h4{
+    text-align: center;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 650px) {
+
+    /*display tablet-desktop class*/
+    .tablet-desktop {
+        display: block;
+    }
+    /*Hide the Mobile class*/
+    .mobile{
+        display:none;
+    }
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        display: inline-block;
+        margin: 0.5%;
+    }
+    
+    nav li a {
+        padding: 0.1em .5em;
+    } 
+    .gridImages {
+        clear:both;
+        display: grid; 
+        grid-template-columns: auto auto auto; 
+        grid-gap: 20px;
+
+     }
+    #figure-header1 {
+        grid-column: 1/4;
+        grid-row: 1/1;
+    }
+    #figure-header2 {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+     .pic-text {
+        font-size: 1em;
+        padding: 10px;
+     }
+     @-webkit-keyframes text-animation {
+        0% { font-size: 1em; } 
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }
+       }
+       @keyframes  text-animation { 
+        0% { font-size: 1em; } 
+        50% { font-size: 2em; }
+        100% { font-size: 1.35em; }
+       }
+       figcaption {
+        -webkit-animation-name: text-animation; 
+        animation-name: text-animation;
+        -webkit-animation-delay: 3s; 
+        animation-delay: 3s;
+        -webkit-animation-duration: 5s; 
+        animation-duration: 5s;
+       }
+footer {
+    font-size: .85em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-gap: 10px;
+}
+#social{
+   display: grid;
+    grid-template-columns:auto auto auto ;
+    grid-gap: 5px;
+    margin-left: 10%;
+    margin-right:10%
+}
+.tel-link{
+    font-size: .85em;
+}
+}
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+ 
+    /* Desktop Viewport: Style rules for the main content */
+    main {
+        border-style: none;
+        margin-bottom: 1em;
+        overflow: auto;
+    }
+    .col-content {
+        width: 30%;
+        float: left;
+        padding: 1.5%;
+    }
+    /* Desktop Viewport: Style rule for footer */
+    footer {
+        clear: left;
+    }
+    nav ul{
+        font-size: 1.20em;
+    }
+}
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1210px){
+
+    header {
+        float:left;
+    }
+    /* Desktop Viewport: Style rules for nav */
+    nav {
+        margin-right: 5px;
+    }
+    nav ul {
+        text-align: right;
+    }
+    nav li {
+        border-radius: 5px;
+    }
+
+    nav li a {  
+        padding: 0.4em;
+    }
+    nav a:hover {
+        color: #3775BDff;
+        background-color: #E8CEACff;   
+    }  
+}
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1320px){
+
+    nav ul{
+        font-size: 1.35em;   
+   }
+}
+    /* Media Query for Large Desktop Viewport.*/
+    @media screen and (min-width: 1921px) {
+
+        #container {
+            width: 1920px;
+            margin: 0 auto;
+        }
+        nav ul{
+            font-size: 2em;   
+       }
+    }
+
+ /* Media Query for Print */
+ @media print {
+    body {
+        color: #000;
+        background-color: #fff;
+    }
+    img{
+        display: none;
+    }
+ } 
